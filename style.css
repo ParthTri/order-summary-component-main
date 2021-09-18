@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Red Hat Display";
+  background-color: hsl(225, 100%, 98%);
+}
+
+.bg-image {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: white;
+  width: 400px;
+  height: 600px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(8px 3px 1rem hsl(224, 23%, 55%));
+}
+
+.hero {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: auto
+}
+
+.content {
+  height: 100%;
+  text-align: center;
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card  h3 {
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.card  p {
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan {
+  height: 15%;
+  padding: 1em;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-details {
+  margin-left: 1em;
+}
+
+.plan-name {
+  color: black !important;
+  font-weight: 900 !important;
+}
+
+.change:hover {
+  text-decoration: none;
+  color: hsl(245, 85%, 62%);
+}
+
+/* TODO add drop shadow */
+.payment {
+  font-size: 20px;
+  font-weight: 500;
+  height: 50px;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 15px;
+  filter: drop-shadow(0 8px 0.5rem hsl(224, 23%, 55%));
+}
+
+.payment:hover {
+  background-color: hsl(245, 85%, 62%);
+}
+
+.cancel {
+  font-size: 20px;
+  height: 50px;
+  color: hsl(224, 23%, 55%);
+  border: none;
+  background-color: white;
+  font-weight: 500;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
